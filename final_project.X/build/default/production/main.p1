@@ -1,0 +1,1291 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"17 ./lcd.h
+[; ;./lcd.h: 17: typedef struct {
+[s S99 `*Vuc 1 :3 `uc 1 :3 `uc 1 :3 `uc 1 :3 `uc 1 :3 `uc 1 :3 `uc 1 ]
+[n S99 . PORT RS EN D4 D5 D6 D7 ]
+"278 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\PIC16F877A.h
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+"1159
+[v _ADCON0 `Vuc ~T0 @X0 0 e@31 ]
+[v F972 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
+[v __delay `JF972 ~T0 @X0 0 e ]
+[p i __delay ]
+"2578 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\PIC16F877A.h
+[v _GO_nDONE `Vb ~T0 @X0 0 e@250 ]
+"1152
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+"2222
+[v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
+"1165
+[s S50 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :2 `uc 1 ]
+[n S50 . ADON . GO_nDONE CHS ADCS ]
+"1172
+[s S51 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S51 . . GO CHS0 CHS1 CHS2 ADCS0 ADCS1 ]
+"1181
+[s S52 :2 `uc 1 :1 `uc 1 ]
+[n S52 . . nDONE ]
+"1185
+[s S53 :2 `uc 1 :1 `uc 1 ]
+[n S53 . . GO_DONE ]
+"1164
+[u S49 `S50 1 `S51 1 `S52 1 `S53 1 ]
+[n S49 . . . . . ]
+"1190
+[v _ADCON0bits `VS49 ~T0 @X0 0 e@31 ]
+"2235
+[s S95 :4 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S95 . PCFG . ADCS2 ADFM ]
+"2241
+[s S96 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S96 . PCFG0 PCFG1 PCFG2 PCFG3 ]
+"2234
+[u S94 `S95 1 `S96 1 ]
+[n S94 . . . ]
+"2248
+[v _ADCON1bits `VS94 ~T0 @X0 0 e@159 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"460
+[s S22 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S22 . RBIF INTF TMR0IF RBIE INTE TMR0IE PEIE GIE ]
+"470
+[s S23 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S23 . . T0IF . T0IE ]
+"459
+[u S21 `S22 1 `S23 1 ]
+[n S21 . . . ]
+"477
+[v _INTCONbits `VS21 ~T0 @X0 0 e@11 ]
+"222
+[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S12 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"221
+[u S11 `S12 1 ]
+[n S11 . . ]
+"233
+[v _PORTBbits `VS11 ~T0 @X0 0 e@6 ]
+"284
+[s S14 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S14 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"283
+[u S13 `S14 1 ]
+[n S13 . . ]
+"295
+[v _PORTCbits `VS13 ~T0 @X0 0 e@7 ]
+[p mainexit ]
+"1255
+[v _OPTION_REG `Vuc ~T0 @X0 0 e@129 ]
+"1375
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"1499
+[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
+"1437
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"346
+[s S16 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S16 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"345
+[u S15 `S16 1 ]
+[n S15 . . ]
+"357
+[v _PORTDbits `VS15 ~T0 @X0 0 e@8 ]
+"1325
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"83 ./lcd.h
+[; ;./lcd.h: 83: _Bool LCD_Init ( LCD display );
+[v _LCD_Init `(a ~T0 @X0 0 ef1`S99 ]
+"95
+[; ;./lcd.h: 95: void LCD_Write ( unsigned char c );
+[v _LCD_Write `(v ~T0 @X0 0 ef1`uc ]
+"92
+[; ;./lcd.h: 92: void LCD_putrs ( const char *a );
+[v _LCD_putrs `(v ~T0 @X0 0 ef1`*Cuc ]
+"340 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\PIC16F877A.h
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+"86 ./lcd.h
+[; ;./lcd.h: 86: void LCD_putc ( char a );
+[v _LCD_putc `(v ~T0 @X0 0 ef1`uc ]
+"7 main.c
+[p x FOSC  =  XT         ]
+"8
+[p x WDTE  =  OFF        ]
+"9
+[p x PWRTE  =  OFF       ]
+"10
+[p x BOREN  =  OFF       ]
+"11
+[p x LVP  =  OFF         ]
+"12
+[p x CPD  =  OFF         ]
+"13
+[p x WRT  =  OFF         ]
+"14
+[p x CP  =  OFF          ]
+"54 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\PIC16F877A.h
+[; <" INDF equ 00h ;# ">
+"61
+[; <" TMR0 equ 01h ;# ">
+"68
+[; <" PCL equ 02h ;# ">
+"75
+[; <" STATUS equ 03h ;# ">
+"161
+[; <" FSR equ 04h ;# ">
+"168
+[; <" PORTA equ 05h ;# ">
+"218
+[; <" PORTB equ 06h ;# ">
+"280
+[; <" PORTC equ 07h ;# ">
+"342
+[; <" PORTD equ 08h ;# ">
+"404
+[; <" PORTE equ 09h ;# ">
+"436
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; <" T1CON equ 010h ;# ">
+"732
+[; <" TMR2 equ 011h ;# ">
+"739
+[; <" T2CON equ 012h ;# ">
+"810
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; <" SSPCON equ 014h ;# ">
+"887
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; <" TXREG equ 019h ;# ">
+"1068
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; <" TRISA equ 085h ;# ">
+"1377
+[; <" TRISB equ 086h ;# ">
+"1439
+[; <" TRISC equ 087h ;# ">
+"1501
+[; <" TRISD equ 088h ;# ">
+"1563
+[; <" TRISE equ 089h ;# ">
+"1620
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; <" PR2 equ 092h ;# ">
+"1825
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; <" EECON2 equ 018Dh ;# ">
+"27 main.c
+[; ;main.c: 27: LCD lcd = {&PORTC, 1, 2, 3, 4, 5, 6};
+[v _lcd `S99 ~T0 @X0 1 e ]
+[i _lcd
+:U ..
+:U ..
+&U _PORTC
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+..
+..
+]
+"45
+[; ;main.c: 45: int SetMoist=85;
+[v _SetMoist `i ~T0 @X0 1 e ]
+[i _SetMoist
+-> 85 `i
+]
+"46
+[; ;main.c: 46: int SetMoistR=0;
+[v _SetMoistR `i ~T0 @X0 1 e ]
+[i _SetMoistR
+-> 0 `i
+]
+"47
+[; ;main.c: 47: int SetMoistL=0;
+[v _SetMoistL `i ~T0 @X0 1 e ]
+[i _SetMoistL
+-> 0 `i
+]
+"48
+[; ;main.c: 48: int cset=0;
+[v _cset `i ~T0 @X0 1 e ]
+[i _cset
+-> 0 `i
+]
+"49
+[; ;main.c: 49: int sensingCounter=0;
+[v _sensingCounter `i ~T0 @X0 1 e ]
+[i _sensingCounter
+-> 0 `i
+]
+"50
+[; ;main.c: 50: int screenCounter=0;
+[v _screenCounter `i ~T0 @X0 1 e ]
+[i _screenCounter
+-> 0 `i
+]
+"51
+[; ;main.c: 51: int getMoist=0;
+[v _getMoist `i ~T0 @X0 1 e ]
+[i _getMoist
+-> 0 `i
+]
+"52
+[; ;main.c: 52: char buffer[2] = "00";
+[v _buffer `uc ~T0 @X0 -> 2 `i e ]
+[i _buffer
+:U ..
+-> 48 `c
+-> 48 `c
+..
+]
+"53
+[; ;main.c: 53: int turnON=1;
+[v _turnON `i ~T0 @X0 1 e ]
+[i _turnON
+-> 1 `i
+]
+"55
+[; ;main.c: 55: unsigned int ADC_Read(unsigned char channel)
+[v _ADC_Read `(ui ~T0 @X0 1 ef1`uc ]
+"57
+[; ;main.c: 57: {
+{
+[e :U _ADC_Read ]
+"55
+[; ;main.c: 55: unsigned int ADC_Read(unsigned char channel)
+[v _channel `uc ~T0 @X0 1 r1 ]
+"57
+[; ;main.c: 57: {
+[f ]
+"59
+[; ;main.c: 59:   ADCON0 &= 0x11000101;
+[e =& _ADCON0 -> -> 285212929 `l `Vuc ]
+"60
+[; ;main.c: 60:   ADCON0 |= channel<<3;
+[e =| _ADCON0 -> << -> _channel `i -> 3 `i `Vuc ]
+"61
+[; ;main.c: 61:   _delay((unsigned long)((2)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"62
+[; ;main.c: 62:   GO_nDONE = 1;
+[e = _GO_nDONE -> -> 1 `i `b ]
+"63
+[; ;main.c: 63:   while(GO_nDONE);
+[e $U 101  ]
+[e :U 102 ]
+[e :U 101 ]
+[e $ _GO_nDONE 102  ]
+[e :U 103 ]
+"64
+[; ;main.c: 64:   return ((ADRESH<<8)+ADRESL);
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
+[e $UE 100  ]
+"66
+[; ;main.c: 66: }
+[e :UE 100 ]
+}
+"68
+[; ;main.c: 68: void ADC_Init()
+[v _ADC_Init `(v ~T0 @X0 1 ef ]
+"69
+[; ;main.c: 69: {
+{
+[e :U _ADC_Init ]
+[f ]
+"70
+[; ;main.c: 70:     ADRESL = 0x00;
+[e = _ADRESL -> -> 0 `i `uc ]
+"71
+[; ;main.c: 71:     ADRESH = 0x00;
+[e = _ADRESH -> -> 0 `i `uc ]
+"73
+[; ;main.c: 73:     ADCON0bits.ADCS1 = 1;
+[e = . . _ADCON0bits 1 6 -> -> 1 `i `uc ]
+"74
+[; ;main.c: 74:     ADCON0bits.ADCS0 = 1;
+[e = . . _ADCON0bits 1 5 -> -> 1 `i `uc ]
+"75
+[; ;main.c: 75:     ADCON0bits.CHS2 = 0;
+[e = . . _ADCON0bits 1 4 -> -> 0 `i `uc ]
+"76
+[; ;main.c: 76:     ADCON0bits.CHS1 = 0;
+[e = . . _ADCON0bits 1 3 -> -> 0 `i `uc ]
+"77
+[; ;main.c: 77:     ADCON0bits.CHS0 = 0;
+[e = . . _ADCON0bits 1 2 -> -> 0 `i `uc ]
+"78
+[; ;main.c: 78:     ADCON0bits.GO_nDONE = 0;
+[e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
+"79
+[; ;main.c: 79:     ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+"81
+[; ;main.c: 81:     ADCON1bits.ADFM = 1;
+[e = . . _ADCON1bits 0 3 -> -> 1 `i `uc ]
+"82
+[; ;main.c: 82:     ADCON1bits.ADCS2 = 0;
+[e = . . _ADCON1bits 0 2 -> -> 0 `i `uc ]
+"83
+[; ;main.c: 83:     ADCON1bits.PCFG3 = 0;
+[e = . . _ADCON1bits 1 3 -> -> 0 `i `uc ]
+"84
+[; ;main.c: 84:     ADCON1bits.PCFG2 = 0;
+[e = . . _ADCON1bits 1 2 -> -> 0 `i `uc ]
+"85
+[; ;main.c: 85:     ADCON1bits.PCFG1 = 0;
+[e = . . _ADCON1bits 1 1 -> -> 0 `i `uc ]
+"86
+[; ;main.c: 86:     ADCON1bits.PCFG0 = 0;
+[e = . . _ADCON1bits 1 0 -> -> 0 `i `uc ]
+"88
+[; ;main.c: 88: }
+[e :UE 104 ]
+}
+[v $root$_InterrupT `(v ~T0 @X0 0 e ]
+"90
+[; ;main.c: 90: void __attribute__((picinterrupt(("")))) InterrupT(void)
+[v _InterrupT `(v ~T1 @X0 1 ef ]
+"91
+[; ;main.c: 91: {
+{
+[e :U _InterrupT ]
+[f ]
+"92
+[; ;main.c: 92:     if(INTCONbits.RBIF ==1)
+[e $ ! == -> . . _INTCONbits 0 0 `i -> 1 `i 106  ]
+"93
+[; ;main.c: 93:     {
+{
+"94
+[; ;main.c: 94:         turnON=1;
+[e = _turnON -> 1 `i ]
+"95
+[; ;main.c: 95:         if(PORTBbits.RB7==1)
+[e $ ! == -> . . _PORTBbits 0 7 `i -> 1 `i 107  ]
+"96
+[; ;main.c: 96:         {
+{
+"97
+[; ;main.c: 97:             if(SetMoist!=99)
+[e $ ! != _SetMoist -> 99 `i 108  ]
+"98
+[; ;main.c: 98:             {
+{
+"99
+[; ;main.c: 99:                 SetMoist++;
+[e ++ _SetMoist -> 1 `i ]
+"100
+[; ;main.c: 100:                 cset=0;
+[e = _cset -> 0 `i ]
+"101
+[; ;main.c: 101:             }
+}
+[e :U 108 ]
+"102
+[; ;main.c: 102:         }
+}
+[e :U 107 ]
+"103
+[; ;main.c: 103:         if(PORTBbits.RB6==1)
+[e $ ! == -> . . _PORTBbits 0 6 `i -> 1 `i 109  ]
+"104
+[; ;main.c: 104:         {
+{
+"105
+[; ;main.c: 105:             turnON=1;
+[e = _turnON -> 1 `i ]
+"106
+[; ;main.c: 106:             if(SetMoist!=5)
+[e $ ! != _SetMoist -> 5 `i 110  ]
+"107
+[; ;main.c: 107:             {
+{
+"108
+[; ;main.c: 108:                 SetMoist--;
+[e -- _SetMoist -> 1 `i ]
+"109
+[; ;main.c: 109:                 cset=0;
+[e = _cset -> 0 `i ]
+"110
+[; ;main.c: 110:             }
+}
+[e :U 110 ]
+"111
+[; ;main.c: 111:         }
+}
+[e :U 109 ]
+"112
+[; ;main.c: 112:         if(PORTBbits.RB5==1)
+[e $ ! == -> . . _PORTBbits 0 5 `i -> 1 `i 111  ]
+"113
+[; ;main.c: 113:         {
+{
+"114
+[; ;main.c: 114:             turnON=1;
+[e = _turnON -> 1 `i ]
+"115
+[; ;main.c: 115:             PORTCbits.RC0 = ~PORTCbits.RC0;
+[e = . . _PORTCbits 0 0 -> ~ -> . . _PORTCbits 0 0 `i `uc ]
+"116
+[; ;main.c: 116:         }
+}
+[e :U 111 ]
+"117
+[; ;main.c: 117:         if(PORTBbits.RB4==1)
+[e $ ! == -> . . _PORTBbits 0 4 `i -> 1 `i 112  ]
+"118
+[; ;main.c: 118:         {
+{
+"119
+[; ;main.c: 119:             turnON = 1;
+[e = _turnON -> 1 `i ]
+"120
+[; ;main.c: 120:         }
+}
+[e :U 112 ]
+"121
+[; ;main.c: 121:         INTCONbits.RBIF=0;
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+"122
+[; ;main.c: 122:     }
+}
+[e :U 106 ]
+"123
+[; ;main.c: 123:     if(INTCONbits.TMR0IF ==1)
+[e $ ! == -> . . _INTCONbits 0 2 `i -> 1 `i 113  ]
+"124
+[; ;main.c: 124:     {
+{
+"125
+[; ;main.c: 125:         sensingCounter++;
+[e ++ _sensingCounter -> 1 `i ]
+"126
+[; ;main.c: 126:         screenCounter++;
+[e ++ _screenCounter -> 1 `i ]
+"127
+[; ;main.c: 127:         if(sensingCounter==50)
+[e $ ! == _sensingCounter -> 50 `i 114  ]
+"128
+[; ;main.c: 128:         {
+{
+"129
+[; ;main.c: 129:             sensingCounter=0;
+[e = _sensingCounter -> 0 `i ]
+"130
+[; ;main.c: 130:             getMoist=ADC_Read(0);
+[e = _getMoist -> ( _ADC_Read (1 -> -> 0 `i `uc `i ]
+"131
+[; ;main.c: 131:             getMoist=(getMoist/1024.0)*100.0;
+[e = _getMoist -> * / -> _getMoist `d .1024.0 .100.0 `i ]
+"132
+[; ;main.c: 132:             if(getMoist<SetMoist)
+[e $ ! < _getMoist _SetMoist 115  ]
+"133
+[; ;main.c: 133:             {
+{
+"134
+[; ;main.c: 134:                 PORTCbits.RC0=1;
+[e = . . _PORTCbits 0 0 -> -> 1 `i `uc ]
+"135
+[; ;main.c: 135:             }
+}
+[e $U 116  ]
+"136
+[; ;main.c: 136:             else if(getMoist>SetMoist)
+[e :U 115 ]
+[e $ ! > _getMoist _SetMoist 117  ]
+"137
+[; ;main.c: 137:             {
+{
+"138
+[; ;main.c: 138:                 PORTCbits.RC0=0;
+[e = . . _PORTCbits 0 0 -> -> 0 `i `uc ]
+"139
+[; ;main.c: 139:             }
+}
+[e :U 117 ]
+[e :U 116 ]
+"140
+[; ;main.c: 140:         }
+}
+[e :U 114 ]
+"141
+[; ;main.c: 141:         if(screenCounter==500)
+[e $ ! == _screenCounter -> 500 `i 118  ]
+"142
+[; ;main.c: 142:         {
+{
+"143
+[; ;main.c: 143:             screenCounter=0;
+[e = _screenCounter -> 0 `i ]
+"144
+[; ;main.c: 144:             turnON=0;
+[e = _turnON -> 0 `i ]
+"145
+[; ;main.c: 145:         }
+}
+[e :U 118 ]
+"146
+[; ;main.c: 146:         INTCONbits.TMR0IF=0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"147
+[; ;main.c: 147:     }
+}
+[e :U 113 ]
+"148
+[; ;main.c: 148: }
+[e :UE 105 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"150
+[; ;main.c: 150: void main()
+[v _main `(v ~T0 @X0 1 ef ]
+"151
+[; ;main.c: 151: {
+{
+[e :U _main ]
+[f ]
+"153
+[; ;main.c: 153:     INTCONbits.GIE=1;
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"154
+[; ;main.c: 154:     INTCONbits.TMR0IE=1;
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+"155
+[; ;main.c: 155:     INTCONbits.RBIE=1;
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+"158
+[; ;main.c: 158:     OPTION_REG = 0b10000111;
+[e = _OPTION_REG -> -> 135 `i `uc ]
+"161
+[; ;main.c: 161:     ADC_Init();
+[e ( _ADC_Init ..  ]
+"164
+[; ;main.c: 164:     TRISB= 0xFF;
+[e = _TRISB -> -> 255 `i `uc ]
+"165
+[; ;main.c: 165:     TRISD = 0x00;
+[e = _TRISD -> -> 0 `i `uc ]
+"166
+[; ;main.c: 166:     TRISC = 0;
+[e = _TRISC -> -> 0 `i `uc ]
+"167
+[; ;main.c: 167:     PORTCbits.RC0=0;
+[e = . . _PORTCbits 0 0 -> -> 0 `i `uc ]
+"168
+[; ;main.c: 168:     PORTDbits.RD7=1;
+[e = . . _PORTDbits 0 7 -> -> 1 `i `uc ]
+"169
+[; ;main.c: 169:     PORTCbits.RC7= 1;
+[e = . . _PORTCbits 0 7 -> -> 1 `i `uc ]
+"170
+[; ;main.c: 170:     TRISA = 1;
+[e = _TRISA -> -> 1 `i `uc ]
+"172
+[; ;main.c: 172:     LCD_Init(lcd);
+[e ( _LCD_Init (1 _lcd ]
+"173
+[; ;main.c: 173:     do { if ( 0 == 0 ) { do { LCD_Write( (0x80 + 0 & 0xF0) >> 4 ); LCD_Write( 0x80 + 0 & 0x0F); } while ( 0 ); } else if ( 0 == 1 ) { do { LCD_Write( (0xC0 + 0 & 0xF0) >> 4 ); LCD_Write( 0xC0 + 0 & 0x0F); } while ( 0 ); } else if ( 0 == 2 ) { do { LCD_Write( (0x94 + 0 & 0xF0) >> 4 ); LCD_Write( 0x94 + 0 & 0x0F); } while ( 0 ); } else if ( 0 == 3 ) { do { LCD_Write( (0xD4 + 0 & 0xF0) >> 4 ); LCD_Write( 0xD4 + 0 & 0x0F); } while ( 0 ); } } while ( 0 );
+[e :U 122 ]
+{
+[e $ ! == -> 0 `i -> 0 `i 123  ]
+{
+[e :U 126 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 128 `i -> 0 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 128 `i -> 0 `i -> 15 `i `uc ]
+}
+[e :U 125 ]
+}
+[e $U 127  ]
+[e :U 123 ]
+[e $ ! == -> 0 `i -> 1 `i 128  ]
+{
+[e :U 131 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 192 `i -> 0 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 192 `i -> 0 `i -> 15 `i `uc ]
+}
+[e :U 130 ]
+}
+[e $U 132  ]
+[e :U 128 ]
+[e $ ! == -> 0 `i -> 2 `i 133  ]
+{
+[e :U 136 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 148 `i -> 0 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 148 `i -> 0 `i -> 15 `i `uc ]
+}
+[e :U 135 ]
+}
+[e $U 137  ]
+[e :U 133 ]
+[e $ ! == -> 0 `i -> 3 `i 138  ]
+{
+[e :U 141 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 212 `i -> 0 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 212 `i -> 0 `i -> 15 `i `uc ]
+}
+[e :U 140 ]
+}
+[e :U 138 ]
+[e :U 137 ]
+[e :U 132 ]
+[e :U 127 ]
+}
+[e :U 121 ]
+"174
+[; ;main.c: 174:     LCD_putrs("Calculating");
+[e ( _LCD_putrs (1 :s 1C ]
+"175
+[; ;main.c: 175:     do { if ( 1 == 0 ) { do { LCD_Write( (0x80 + 0 & 0xF0) >> 4 ); LCD_Write( 0x80 + 0 & 0x0F); } while ( 0 ); } else if ( 1 == 1 ) { do { LCD_Write( (0xC0 + 0 & 0xF0) >> 4 ); LCD_Write( 0xC0 + 0 & 0x0F); } while ( 0 ); } else if ( 1 == 2 ) { do { LCD_Write( (0x94 + 0 & 0xF0) >> 4 ); LCD_Write( 0x94 + 0 & 0x0F); } while ( 0 ); } else if ( 1 == 3 ) { do { LCD_Write( (0xD4 + 0 & 0xF0) >> 4 ); LCD_Write( 0xD4 + 0 & 0x0F); } while ( 0 ); } } while ( 0 );
+[e :U 144 ]
+{
+[e $ ! == -> 1 `i -> 0 `i 145  ]
+{
+[e :U 148 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 128 `i -> 0 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 128 `i -> 0 `i -> 15 `i `uc ]
+}
+[e :U 147 ]
+}
+[e $U 149  ]
+[e :U 145 ]
+[e $ ! == -> 1 `i -> 1 `i 150  ]
+{
+[e :U 153 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 192 `i -> 0 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 192 `i -> 0 `i -> 15 `i `uc ]
+}
+[e :U 152 ]
+}
+[e $U 154  ]
+[e :U 150 ]
+[e $ ! == -> 1 `i -> 2 `i 155  ]
+{
+[e :U 158 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 148 `i -> 0 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 148 `i -> 0 `i -> 15 `i `uc ]
+}
+[e :U 157 ]
+}
+[e $U 159  ]
+[e :U 155 ]
+[e $ ! == -> 1 `i -> 3 `i 160  ]
+{
+[e :U 163 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 212 `i -> 0 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 212 `i -> 0 `i -> 15 `i `uc ]
+}
+[e :U 162 ]
+}
+[e :U 160 ]
+[e :U 159 ]
+[e :U 154 ]
+[e :U 149 ]
+}
+[e :U 143 ]
+"176
+[; ;main.c: 176:     LCD_putrs("Moisture...");
+[e ( _LCD_putrs (1 :s 2C ]
+"177
+[; ;main.c: 177:     _delay((unsigned long)((1000)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"178
+[; ;main.c: 178:     do { LCD_Write( (0x01 & 0xF0) >> 4 ); LCD_Write( 0x01 & 0x0F); } while ( 0 );
+[e :U 166 ]
+{
+[e ( _LCD_Write (1 -> >> & -> 1 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & -> 1 `i -> 15 `i `uc ]
+}
+[e :U 165 ]
+"179
+[; ;main.c: 179:     do { if ( 0 == 0 ) { do { LCD_Write( (0x80 + 1 & 0xF0) >> 4 ); LCD_Write( 0x80 + 1 & 0x0F); } while ( 0 ); } else if ( 0 == 1 ) { do { LCD_Write( (0xC0 + 1 & 0xF0) >> 4 ); LCD_Write( 0xC0 + 1 & 0x0F); } while ( 0 ); } else if ( 0 == 2 ) { do { LCD_Write( (0x94 + 1 & 0xF0) >> 4 ); LCD_Write( 0x94 + 1 & 0x0F); } while ( 0 ); } else if ( 0 == 3 ) { do { LCD_Write( (0xD4 + 1 & 0xF0) >> 4 ); LCD_Write( 0xD4 + 1 & 0x0F); } while ( 0 ); } } while ( 0 );
+[e :U 169 ]
+{
+[e $ ! == -> 0 `i -> 0 `i 170  ]
+{
+[e :U 173 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 128 `i -> 1 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 128 `i -> 1 `i -> 15 `i `uc ]
+}
+[e :U 172 ]
+}
+[e $U 174  ]
+[e :U 170 ]
+[e $ ! == -> 0 `i -> 1 `i 175  ]
+{
+[e :U 178 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 192 `i -> 1 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 192 `i -> 1 `i -> 15 `i `uc ]
+}
+[e :U 177 ]
+}
+[e $U 179  ]
+[e :U 175 ]
+[e $ ! == -> 0 `i -> 2 `i 180  ]
+{
+[e :U 183 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 148 `i -> 1 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 148 `i -> 1 `i -> 15 `i `uc ]
+}
+[e :U 182 ]
+}
+[e $U 184  ]
+[e :U 180 ]
+[e $ ! == -> 0 `i -> 3 `i 185  ]
+{
+[e :U 188 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 212 `i -> 1 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 212 `i -> 1 `i -> 15 `i `uc ]
+}
+[e :U 187 ]
+}
+[e :U 185 ]
+[e :U 184 ]
+[e :U 179 ]
+[e :U 174 ]
+}
+[e :U 168 ]
+"180
+[; ;main.c: 180:     LCD_putrs("Moisture:");
+[e ( _LCD_putrs (1 :s 3C ]
+"182
+[; ;main.c: 182:     while(1)
+[e :U 190 ]
+"183
+[; ;main.c: 183:     {
+{
+"184
+[; ;main.c: 184:         if(cset==0)
+[e $ ! == _cset -> 0 `i 192  ]
+"185
+[; ;main.c: 185:         {
+{
+"187
+[; ;main.c: 187:             cset=1;
+[e = _cset -> 1 `i ]
+"188
+[; ;main.c: 188:             SetMoistR= SetMoist % 10;
+[e = _SetMoistR % _SetMoist -> 10 `i ]
+"189
+[; ;main.c: 189:             switch (SetMoistR)
+[e $U 194  ]
+"190
+[; ;main.c: 190:             {
+{
+"191
+[; ;main.c: 191:             case 0: SetMoistR=0x3F; break;
+[e :U 195 ]
+[e = _SetMoistR -> 63 `i ]
+[e $U 193  ]
+"192
+[; ;main.c: 192:             case 1: SetMoistR=0x06; break;
+[e :U 196 ]
+[e = _SetMoistR -> 6 `i ]
+[e $U 193  ]
+"193
+[; ;main.c: 193:             case 2: SetMoistR=0x5B; break;
+[e :U 197 ]
+[e = _SetMoistR -> 91 `i ]
+[e $U 193  ]
+"194
+[; ;main.c: 194:             case 3: SetMoistR=0x4F; break;
+[e :U 198 ]
+[e = _SetMoistR -> 79 `i ]
+[e $U 193  ]
+"195
+[; ;main.c: 195:             case 4: SetMoistR=0x66; break;
+[e :U 199 ]
+[e = _SetMoistR -> 102 `i ]
+[e $U 193  ]
+"196
+[; ;main.c: 196:             case 5: SetMoistR=0x6D; break;
+[e :U 200 ]
+[e = _SetMoistR -> 109 `i ]
+[e $U 193  ]
+"197
+[; ;main.c: 197:             case 6: SetMoistR=0x7D; break;
+[e :U 201 ]
+[e = _SetMoistR -> 125 `i ]
+[e $U 193  ]
+"198
+[; ;main.c: 198:             case 7: SetMoistR=0x07; break;
+[e :U 202 ]
+[e = _SetMoistR -> 7 `i ]
+[e $U 193  ]
+"199
+[; ;main.c: 199:             case 8: SetMoistR=0x7F; break;
+[e :U 203 ]
+[e = _SetMoistR -> 127 `i ]
+[e $U 193  ]
+"200
+[; ;main.c: 200:             case 9: SetMoistR=0x6F; break;
+[e :U 204 ]
+[e = _SetMoistR -> 111 `i ]
+[e $U 193  ]
+"201
+[; ;main.c: 201:             }
+}
+[e $U 193  ]
+[e :U 194 ]
+[e [\ _SetMoistR , $ -> 0 `i 195
+ , $ -> 1 `i 196
+ , $ -> 2 `i 197
+ , $ -> 3 `i 198
+ , $ -> 4 `i 199
+ , $ -> 5 `i 200
+ , $ -> 6 `i 201
+ , $ -> 7 `i 202
+ , $ -> 8 `i 203
+ , $ -> 9 `i 204
+ 193 ]
+[e :U 193 ]
+"203
+[; ;main.c: 203:             SetMoistL= (SetMoist/10) % 10;
+[e = _SetMoistL % / _SetMoist -> 10 `i -> 10 `i ]
+"204
+[; ;main.c: 204:             switch (SetMoistL)
+[e $U 206  ]
+"205
+[; ;main.c: 205:             {
+{
+"206
+[; ;main.c: 206:             case 0: SetMoistL=0x3F; break;
+[e :U 207 ]
+[e = _SetMoistL -> 63 `i ]
+[e $U 205  ]
+"207
+[; ;main.c: 207:             case 1: SetMoistL=0x06; break;
+[e :U 208 ]
+[e = _SetMoistL -> 6 `i ]
+[e $U 205  ]
+"208
+[; ;main.c: 208:             case 2: SetMoistL=0x5B; break;
+[e :U 209 ]
+[e = _SetMoistL -> 91 `i ]
+[e $U 205  ]
+"209
+[; ;main.c: 209:             case 3: SetMoistL=0x4F; break;
+[e :U 210 ]
+[e = _SetMoistL -> 79 `i ]
+[e $U 205  ]
+"210
+[; ;main.c: 210:             case 4: SetMoistL=0x66; break;
+[e :U 211 ]
+[e = _SetMoistL -> 102 `i ]
+[e $U 205  ]
+"211
+[; ;main.c: 211:             case 5: SetMoistL=0x6D; break;
+[e :U 212 ]
+[e = _SetMoistL -> 109 `i ]
+[e $U 205  ]
+"212
+[; ;main.c: 212:             case 6: SetMoistL=0x7D; break;
+[e :U 213 ]
+[e = _SetMoistL -> 125 `i ]
+[e $U 205  ]
+"213
+[; ;main.c: 213:             case 7: SetMoistL=0x07; break;
+[e :U 214 ]
+[e = _SetMoistL -> 7 `i ]
+[e $U 205  ]
+"214
+[; ;main.c: 214:             case 8: SetMoistL=0x7F; break;
+[e :U 215 ]
+[e = _SetMoistL -> 127 `i ]
+[e $U 205  ]
+"215
+[; ;main.c: 215:             case 9: SetMoistL=0x6F; break;
+[e :U 216 ]
+[e = _SetMoistL -> 111 `i ]
+[e $U 205  ]
+"216
+[; ;main.c: 216:             }
+}
+[e $U 205  ]
+[e :U 206 ]
+[e [\ _SetMoistL , $ -> 0 `i 207
+ , $ -> 1 `i 208
+ , $ -> 2 `i 209
+ , $ -> 3 `i 210
+ , $ -> 4 `i 211
+ , $ -> 5 `i 212
+ , $ -> 6 `i 213
+ , $ -> 7 `i 214
+ , $ -> 8 `i 215
+ , $ -> 9 `i 216
+ 205 ]
+[e :U 205 ]
+"218
+[; ;main.c: 218:         }
+}
+[e :U 192 ]
+"220
+[; ;main.c: 220:         PORTD=SetMoistR;
+[e = _PORTD -> _SetMoistR `uc ]
+"221
+[; ;main.c: 221:         PORTCbits.RC7=0;
+[e = . . _PORTCbits 0 7 -> -> 0 `i `uc ]
+"222
+[; ;main.c: 222:         PORTDbits.RD7=1;
+[e = . . _PORTDbits 0 7 -> -> 1 `i `uc ]
+"223
+[; ;main.c: 223:         _delay((unsigned long)((100)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"224
+[; ;main.c: 224:         PORTD=SetMoistL;
+[e = _PORTD -> _SetMoistL `uc ]
+"225
+[; ;main.c: 225:         PORTDbits.RD7=0;
+[e = . . _PORTDbits 0 7 -> -> 0 `i `uc ]
+"226
+[; ;main.c: 226:         PORTCbits.RC7=1;
+[e = . . _PORTCbits 0 7 -> -> 1 `i `uc ]
+"227
+[; ;main.c: 227:         _delay((unsigned long)((50)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"230
+[; ;main.c: 230:         buffer[0] = (getMoist/10)%10 +48;
+[e = *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> + % / _getMoist -> 10 `i -> 10 `i -> 48 `i `uc ]
+"231
+[; ;main.c: 231:         buffer[1] = (getMoist)%10+48;
+[e = *U + &U _buffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> + % _getMoist -> 10 `i -> 48 `i `uc ]
+"232
+[; ;main.c: 232:         do { if ( 0 == 0 ) { do { LCD_Write( (0x80 + 10 & 0xF0) >> 4 ); LCD_Write( 0x80 + 10 & 0x0F); } while ( 0 ); } else if ( 0 == 1 ) { do { LCD_Write( (0xC0 + 10 & 0xF0) >> 4 ); LCD_Write( 0xC0 + 10 & 0x0F); } while ( 0 ); } else if ( 0 == 2 ) { do { LCD_Write( (0x94 + 10 & 0xF0) >> 4 ); LCD_Write( 0x94 + 10 & 0x0F); } while ( 0 ); } else if ( 0 == 3 ) { do { LCD_Write( (0xD4 + 10 & 0xF0) >> 4 ); LCD_Write( 0xD4 + 10 & 0x0F); } while ( 0 ); } } while ( 0 );
+[e :U 219 ]
+{
+[e $ ! == -> 0 `i -> 0 `i 220  ]
+{
+[e :U 223 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 128 `i -> 10 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 128 `i -> 10 `i -> 15 `i `uc ]
+}
+[e :U 222 ]
+}
+[e $U 224  ]
+[e :U 220 ]
+[e $ ! == -> 0 `i -> 1 `i 225  ]
+{
+[e :U 228 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 192 `i -> 10 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 192 `i -> 10 `i -> 15 `i `uc ]
+}
+[e :U 227 ]
+}
+[e $U 229  ]
+[e :U 225 ]
+[e $ ! == -> 0 `i -> 2 `i 230  ]
+{
+[e :U 233 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 148 `i -> 10 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 148 `i -> 10 `i -> 15 `i `uc ]
+}
+[e :U 232 ]
+}
+[e $U 234  ]
+[e :U 230 ]
+[e $ ! == -> 0 `i -> 3 `i 235  ]
+{
+[e :U 238 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 212 `i -> 10 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 212 `i -> 10 `i -> 15 `i `uc ]
+}
+[e :U 237 ]
+}
+[e :U 235 ]
+[e :U 234 ]
+[e :U 229 ]
+[e :U 224 ]
+}
+[e :U 218 ]
+"233
+[; ;main.c: 233:         LCD_putc(buffer[0]);
+[e ( _LCD_putc (1 *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux ]
+"234
+[; ;main.c: 234:         do { if ( 0 == 0 ) { do { LCD_Write( (0x80 + 11 & 0xF0) >> 4 ); LCD_Write( 0x80 + 11 & 0x0F); } while ( 0 ); } else if ( 0 == 1 ) { do { LCD_Write( (0xC0 + 11 & 0xF0) >> 4 ); LCD_Write( 0xC0 + 11 & 0x0F); } while ( 0 ); } else if ( 0 == 2 ) { do { LCD_Write( (0x94 + 11 & 0xF0) >> 4 ); LCD_Write( 0x94 + 11 & 0x0F); } while ( 0 ); } else if ( 0 == 3 ) { do { LCD_Write( (0xD4 + 11 & 0xF0) >> 4 ); LCD_Write( 0xD4 + 11 & 0x0F); } while ( 0 ); } } while ( 0 );
+[e :U 241 ]
+{
+[e $ ! == -> 0 `i -> 0 `i 242  ]
+{
+[e :U 245 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 128 `i -> 11 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 128 `i -> 11 `i -> 15 `i `uc ]
+}
+[e :U 244 ]
+}
+[e $U 246  ]
+[e :U 242 ]
+[e $ ! == -> 0 `i -> 1 `i 247  ]
+{
+[e :U 250 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 192 `i -> 11 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 192 `i -> 11 `i -> 15 `i `uc ]
+}
+[e :U 249 ]
+}
+[e $U 251  ]
+[e :U 247 ]
+[e $ ! == -> 0 `i -> 2 `i 252  ]
+{
+[e :U 255 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 148 `i -> 11 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 148 `i -> 11 `i -> 15 `i `uc ]
+}
+[e :U 254 ]
+}
+[e $U 256  ]
+[e :U 252 ]
+[e $ ! == -> 0 `i -> 3 `i 257  ]
+{
+[e :U 260 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 212 `i -> 11 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 212 `i -> 11 `i -> 15 `i `uc ]
+}
+[e :U 259 ]
+}
+[e :U 257 ]
+[e :U 256 ]
+[e :U 251 ]
+[e :U 246 ]
+}
+[e :U 240 ]
+"235
+[; ;main.c: 235:         LCD_putc(buffer[1]);
+[e ( _LCD_putc (1 *U + &U _buffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux ]
+"236
+[; ;main.c: 236:         do { if ( 0 == 0 ) { do { LCD_Write( (0x80 + 12 & 0xF0) >> 4 ); LCD_Write( 0x80 + 12 & 0x0F); } while ( 0 ); } else if ( 0 == 1 ) { do { LCD_Write( (0xC0 + 12 & 0xF0) >> 4 ); LCD_Write( 0xC0 + 12 & 0x0F); } while ( 0 ); } else if ( 0 == 2 ) { do { LCD_Write( (0x94 + 12 & 0xF0) >> 4 ); LCD_Write( 0x94 + 12 & 0x0F); } while ( 0 ); } else if ( 0 == 3 ) { do { LCD_Write( (0xD4 + 12 & 0xF0) >> 4 ); LCD_Write( 0xD4 + 12 & 0x0F); } while ( 0 ); } } while ( 0 );
+[e :U 263 ]
+{
+[e $ ! == -> 0 `i -> 0 `i 264  ]
+{
+[e :U 267 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 128 `i -> 12 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 128 `i -> 12 `i -> 15 `i `uc ]
+}
+[e :U 266 ]
+}
+[e $U 268  ]
+[e :U 264 ]
+[e $ ! == -> 0 `i -> 1 `i 269  ]
+{
+[e :U 272 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 192 `i -> 12 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 192 `i -> 12 `i -> 15 `i `uc ]
+}
+[e :U 271 ]
+}
+[e $U 273  ]
+[e :U 269 ]
+[e $ ! == -> 0 `i -> 2 `i 274  ]
+{
+[e :U 277 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 148 `i -> 12 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 148 `i -> 12 `i -> 15 `i `uc ]
+}
+[e :U 276 ]
+}
+[e $U 278  ]
+[e :U 274 ]
+[e $ ! == -> 0 `i -> 3 `i 279  ]
+{
+[e :U 282 ]
+{
+[e ( _LCD_Write (1 -> >> & + -> 212 `i -> 12 `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & + -> 212 `i -> 12 `i -> 15 `i `uc ]
+}
+[e :U 281 ]
+}
+[e :U 279 ]
+[e :U 278 ]
+[e :U 273 ]
+[e :U 268 ]
+}
+[e :U 262 ]
+"237
+[; ;main.c: 237:         LCD_putc('%');
+[e ( _LCD_putc (1 -> -> 37 `ui `uc ]
+"240
+[; ;main.c: 240:         if(turnON==1)
+[e $ ! == _turnON -> 1 `i 283  ]
+"241
+[; ;main.c: 241:         {
+{
+"242
+[; ;main.c: 242:             do { unsigned char cmd = 0x08; if ( 1 == 1 ) { cmd |= 1 << 2; } if ( 1 == 1 ) { cmd |= 1 << 1; } if ( 1 == 1 ) { cmd |= 1; } do { LCD_Write( (cmd & 0xF0) >> 4 ); LCD_Write( cmd & 0x0F); } while ( 0 ); } while ( 0 );;
+[e :U 286 ]
+{
+[v _cmd `uc ~T0 @X0 1 a ]
+[e = _cmd -> -> 8 `i `uc ]
+[e $ ! == -> 1 `i -> 1 `i 287  ]
+{
+[e =| _cmd -> << -> 1 `i -> 2 `i `uc ]
+}
+[e :U 287 ]
+[e $ ! == -> 1 `i -> 1 `i 288  ]
+{
+[e =| _cmd -> << -> 1 `i -> 1 `i `uc ]
+}
+[e :U 288 ]
+[e $ ! == -> 1 `i -> 1 `i 289  ]
+{
+[e =| _cmd -> -> 1 `i `uc ]
+}
+[e :U 289 ]
+[e :U 292 ]
+{
+[e ( _LCD_Write (1 -> >> & -> _cmd `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & -> _cmd `i -> 15 `i `uc ]
+}
+[e :U 291 ]
+}
+[e :U 285 ]
+"243
+[; ;main.c: 243:         }
+}
+[e $U 293  ]
+"244
+[; ;main.c: 244:         else
+[e :U 283 ]
+"245
+[; ;main.c: 245:         {
+{
+"246
+[; ;main.c: 246:             do { unsigned char cmd = 0x08; if ( 0 == 1 ) { cmd |= 1 << 2; } if ( 0 == 1 ) { cmd |= 1 << 1; } if ( 0 == 1 ) { cmd |= 1; } do { LCD_Write( (cmd & 0xF0) >> 4 ); LCD_Write( cmd & 0x0F); } while ( 0 ); } while ( 0 );;
+[e :U 296 ]
+{
+[v _cmd `uc ~T0 @X0 1 a ]
+[e = _cmd -> -> 8 `i `uc ]
+[e $ ! == -> 0 `i -> 1 `i 297  ]
+{
+[e =| _cmd -> << -> 1 `i -> 2 `i `uc ]
+}
+[e :U 297 ]
+[e $ ! == -> 0 `i -> 1 `i 298  ]
+{
+[e =| _cmd -> << -> 1 `i -> 1 `i `uc ]
+}
+[e :U 298 ]
+[e $ ! == -> 0 `i -> 1 `i 299  ]
+{
+[e =| _cmd -> -> 1 `i `uc ]
+}
+[e :U 299 ]
+[e :U 302 ]
+{
+[e ( _LCD_Write (1 -> >> & -> _cmd `i -> 240 `i -> 4 `i `uc ]
+[e ( _LCD_Write (1 -> & -> _cmd `i -> 15 `i `uc ]
+}
+[e :U 301 ]
+}
+[e :U 295 ]
+"247
+[; ;main.c: 247:         }
+}
+[e :U 293 ]
+"248
+[; ;main.c: 248:     }
+}
+[e :U 189 ]
+[e $U 190  ]
+[e :U 191 ]
+"249
+[; ;main.c: 249: }
+[e :UE 119 ]
+}
+[a 1C 67 97 108 99 117 108 97 116 105 110 103 0 ]
+[a 3C 77 111 105 115 116 117 114 101 58 0 ]
+[a 2C 77 111 105 115 116 117 114 101 46 46 46 0 ]

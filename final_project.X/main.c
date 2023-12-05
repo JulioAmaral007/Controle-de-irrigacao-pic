@@ -120,7 +120,7 @@ void __interrupt() InterrupT(void)
         }
         INTCONbits.RBIF=0;
     }
-    if(INTCONbits.TMR0IF ==1)
+    if(INTCONbits.TMR0IF == 1)
     {
         sensingCounter++;
         screenCounter++;    //2 minutes timer for moisture

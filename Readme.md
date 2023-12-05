@@ -1,9 +1,10 @@
-# smart-irrigation-system-using-PIC
-smart irrigation system using PIC 16f877a
+# Controle-de-irrigacao-pic
 
-Moisture sensor senses the ground, displays on screen then compares the value with the set value on the 7-segments.
-if the screen value is lower than 7-segmet value then it will run the water pump until screen value is >= 7-segments'
+sistema de irrigação inteligente usando PIC 16f877a
 
-there are 4 buttons. from right to left: turn on screen. change the pump condition for few seconds until it recompares. set moisture threshold value up and down buttons.
+O sensor de umidade detecta o solo, é exibido na tela e compara o valor com o valor definido nos 7 segmentos.
+se o valor da tela for inferior ao valor de 7 segmentos, a bomba de água funcionará até que o valor da tela seja >= 7 segmentos'
+
+existem 4 botões. da direita para a esquerda: ligue a tela. mude a condição da bomba por alguns segundos até que ela seja recomparada. definir os botões para cima e para baixo do valor do limite de umidade.
 
 
